@@ -19,7 +19,7 @@ run: install
 
 uninstall:
 	@echo "uninstall packages..."
-	@rm -rf $(VENV_NAME)
-	@rm .venv.info
-	@rm poetry.lock
+	@rm -rf -f $(VENV_NAME)
+	@rm -f .venv.info
+	@rm -f poetry.lock
 	@echo "uninstall complete!"
